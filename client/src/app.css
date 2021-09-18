@@ -1,0 +1,58 @@
+:root {
+    --primary-color: #2d9cdb;
+    --primary-color-dark: #1b587c;
+
+    --text-color : #4d4d4d;
+
+    --top-bar-height: 50px;
+    --top-cat-height: 30px;
+
+}
+
+body {
+    color: var(--text-color);
+}
+
+.logo {
+    color: var(--primary-color);
+}
+
+
+.btn {
+    width: 200px;
+    height: 40px;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .3s;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.btnSec {
+    width: 200px;
+    height: 40px;
+    outline: none;
+    background-color: inherit;
+    border: 1.5px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 3px;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .3s;
+    letter-spacing: 1px;
+}
+
+.btnSec:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+

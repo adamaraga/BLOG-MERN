@@ -1,0 +1,134 @@
+.settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - var(--top-bar-height));
+}
+
+.settingsWrapper {
+  width: 700px;
+  padding: 30px;
+border: 1.2px solid rgb(219, 219, 219);
+border-radius: 5px;
+margin-bottom: 30px;
+}
+
+.settingsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settingsTitleUpdate {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.settingsTitleDelete {
+  color: red;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.settingsForm {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.settingsForm label {
+  position: relative;
+}
+
+.settingsPP {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.settingsPP > img {
+  height: 70px;
+  width: 70px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.settingsPPIcon {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  margin-left: 10px;
+  color: white;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+ 
+.settingsPPButton:focus {
+  outline-style: none;
+}
+
+.settingsForm > label {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.settingsPPInput {
+  width: 30%;
+}
+
+.settingsForm > input {
+  color: gray;
+  margin-top: 10px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.mb1{
+  margin-bottom: 10px;
+}
+
+.mb2 {
+  margin-bottom: 20px;
+}
+
+.settingsForm input:focus{
+  border-bottom: 1px solid var(--primary-color-light);
+    outline: none;
+}
+
+.btnCenter {
+  align-self: center;
+}
+
+.settingsSubmitButton:hover {
+  background-color: rgb(1, 114, 114);
+}
+
+
+.profileDesc {
+  margin-top: .5rem;
+}
+
+
+
+.updateIcon {
+  color: var(--primary-color);
+  position: relative;
+  top: -15px;
+  cursor: pointer;
+}
+
+.cancleBtn {
+  color: var(--primary-color);
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  display: inline;
+}

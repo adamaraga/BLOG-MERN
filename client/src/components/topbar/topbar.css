@@ -1,0 +1,139 @@
+.top {
+  width: 100%;
+  height: var(--top-bar-height);
+  background-color: white;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  font-family: "Varela Round", sans-serif;
+}
+
+.logoImg {
+  height: 40px;
+  position: relative;
+  top: 2px;
+}
+
+.topLeft,
+.topRight {
+  flex: 3;
+  display: flex;
+  align-items: center;
+}
+
+.topLeft {
+  padding-left: 3rem;
+}
+
+.topRight {
+  justify-content: flex-end;
+  padding-right: 3rem;
+}
+
+.topIcon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #444;
+  cursor: pointer;
+}
+
+.topCenter {
+  flex: 6;
+}
+
+.topList {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topListItem {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.topListItem:last-child {
+  margin-right: 0;
+}
+
+.topListItem:hover {
+  color: var(--primary-color);
+}
+
+.topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.topSearchIcon {
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+}
+
+.topUser {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topUser:hover .topUserMenu {
+  display: flex;
+}
+
+.topUserMenu {
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  flex-direction: column;
+  transform: translateX(-50%);
+  box-shadow: 0px 2px 16px -4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 2px 16px -4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 2px 16px -4px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  border-radius: 5px;
+  display: none;
+  transition: 0.3s;
+  align-items: center;
+  justify-content: center;
+}
+
+.topUserItem {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.topUserItem:not(:last-child) {
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.shadow {
+  box-shadow: -2px -7px 8px 10px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: -2px -7px 8px 10px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: -2px -7px 8px 10px rgba(0, 0, 0, 0.05);
+}
+
+.topBarBtn {
+  /* border: 1.5px solid var(--primary-color); */
+  border-radius: 3px;
+  padding: 3px 8px;
+  background-color: var(--primary-color);
+  color: white;
+  transition: 0.3s;
+}
+
+.topBarBtn:hover {
+  background-color: var(--primary-color-dark);
+}

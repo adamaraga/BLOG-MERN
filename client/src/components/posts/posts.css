@@ -1,0 +1,46 @@
+.posts {
+  flex: 9;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  margin-bottom: 4rem;
+}
+
+.paginationBttns {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  margin-top: .5rem;
+}
+
+.paginationBttns a {
+  padding: 10px 15px;
+  margin: 4px;
+  border-radius: 5px;
+  border: 1.3px solid var(--primary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: .3s;
+  font-family: "Varela Round", sans-serif;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.paginationActive a {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.paginationDisabled a {
+  color: #e7e7e7;
+  background-color: white;
+  border: 1px solid #e7e7e7;
+  
+}
+
